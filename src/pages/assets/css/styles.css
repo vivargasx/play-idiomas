@@ -1,0 +1,210 @@
+/* VARIAVEIS */
+:root {
+    --color-principal: #0C356A;
+    --color-secundaria: #FFC436;
+    --color-bg: #fff;
+    --color-gray: #d9d9d9;
+
+    /* TEXTO */
+    --color-titulo: #000000;
+    --color-titulo-secundaria: #0c356a;
+    --color-txt: #fff;
+
+    /* BUTTONS */
+    --btn-color-hover: #22589e;
+}
+
+
+
+
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header Index HTML */
+header {
+    width: 100vh;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-bar-links .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: auto;
+}
+
+.container-banner img {
+    width: 100vw; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+
+.nav-bar-links {
+    background-color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa a logo dos itens */
+    padding: 10px 40px;
+    width: 100%; 
+    
+}
+
+
+.nav-bar-links a {
+    color: var(--color-txt);
+    text-decoration: none;
+    font-weight: 400px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nav-bar-links a:hover {
+    color: var(--color-secundaria);
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-bar-links .pre-matricula {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1.2px solid var(--color-bg);
+}
+
+.nav-bar-links .pre-matricula:hover {
+    background-color: var(--color-bg);
+    transition: color 0.2s ease-in;
+
+    color: var(--color-principal);
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+
+/* CONTEUDO */
+.container-conteudo{
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    margin: 40px;
+    gap: 60px; /*Conferir o gap*/
+
+    align-items: center;
+}
+
+.container-conteudo-esquerda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 20px;
+    gap: 20px;
+}
+
+.container-conteudo-esquerda h1 {
+    color: var(--color-titulo);
+    font-size: 45px;
+}
+
+.container-conteudo-esquerda .sub-titulo {
+    color: var(--color-titulo-secundaria);
+}
+
+.container-conteudo-esquerda p {
+    font-size: 24px;
+}
+
+.container-conteudo-esquerda button {
+    background-color: var(--color-principal);
+    border: none;
+    padding: 10px;
+    
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--color-txt);
+    border-radius: 20px;
+}
+
+.container-conteudo-esquerda button:hover {
+    cursor: pointer;
+    background-color: var(--btn-color-hover);
+
+}
+
+.container-conteudo-direita{
+    background-color: var(--color-gray);
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    border-radius: 20px;
+    height: 50vh;
+    width: 50vh;    
+    text-align: center;
+}
+
+.container-conteudo-direita h3 {
+    color: var(--color-titulo-secundaria);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.container-conteudo-direita p {
+    font-size: 25px;
+    margin: 10px;
+    text-align: left;
+
+}
+
+.container-conteudo-direita button {
+    border: 3px solid var(--color-principal);
+    color: var(--color-principal);
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.container-conteudo-direita button:hover {
+    cursor: pointer;
+    background-color: var(--btn-color-hover);
+    color: var(--color-txt);
+}
