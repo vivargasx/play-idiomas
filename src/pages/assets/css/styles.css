@@ -9,6 +9,7 @@
     --color-titulo: #000000;
     --color-titulo-secundaria: #0c356a;
     --color-txt: #fff;
+    --color-txt-cinza: #444;
 
     /* BUTTONS */
     --btn-color-hover: #22589e;
@@ -63,7 +64,7 @@ header {
     background-color: var(--color-principal);
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Separa a logo dos itens */
+    justify-content: space-between;
     padding: 10px 40px;
     width: 100%; 
     
@@ -205,6 +206,83 @@ header {
 
 .container-conteudo-direita button:hover {
     cursor: pointer;
-    background-color: var(--btn-color-hover);
+    background-color: var(--color-principal);
     color: var(--color-txt);
 }
+
+
+/* CARROSSEL */
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    max-width: 1000px; 
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* ITEM DO CARROSSEL */
+.carrossel-item {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    width: 100%;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* IMAGEM */
+.carrossel-img {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 20px;
+    object-fit: cover;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* TEXTO */
+.carrossel-texto h3 {
+    color: var(--color-principal);
+    font-size: 55px; 
+    font-weight: bold;
+}
+
+.carrossel-texto h6 {
+    color: var(--color-titulo);
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+.carrossel-texto p {
+    font-size: 25px; 
+    color: var(--color-txt-cinza);
+}
+
+/* BOTÃO DA SETA */
+.carrossel-next {
+    background: none;
+    border: none;
+    font-size: 120px;
+    cursor: pointer;
+    color: #002D6D;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.carrossel-next:hover {
+    transform: scale(1.15);
+}
+
+/* EFEITOS DE TRANSIÇÃO */
+.fade-out {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
