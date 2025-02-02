@@ -245,21 +245,25 @@ button:hover {
     background-color: #0c356a;
 }
 
-.cadastro{
+.cadastro {
     text-align: center;
     margin-top: 15px;
     font-size: 22px;
     color: #0c356a; 
     cursor: pointer;
     font-weight: bolder;
-    
-}
-.cadastro a:link {
-    text-decoration: none;
-    text-decoration-color: #22589e;
 }
 
-.cadastro:hover{
-    color: #22589e; 
+.cadastro a:link, 
+.cadastro a:visited, 
+.cadastro a:hover, 
+.cadastro a:active {
+    text-decoration: none;
+    color: inherit; /* Isso vai manter a cor original do texto */
 }
+
+.cadastro:hover {
+    color: #22589e;
+}
+
 
