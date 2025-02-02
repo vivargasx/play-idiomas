@@ -1,0 +1,265 @@
+/* VARIAVEIS */
+:root {
+    --color-principal: #0C356A;
+    --color-secundaria: #FFC436;
+    --color-bg: #fff;
+    --color-gray: #d9d9d9;
+
+    /* TEXTO */
+    --color-titulo: #000000;
+    --color-titulo-secundaria: #0c356a;
+    --color-txt: #fff;
+
+    /* BUTTONS */
+    --btn-color-hover: #22589e;
+}
+
+
+
+
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    
+}
+
+
+/* Header Index HTML */
+header {
+    width: 100vh;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-bar-links .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: auto;
+}
+
+.container-banner img {
+    width: 100vw; 
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+
+.nav-bar-links {
+    background-color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa a logo dos itens */
+    padding: 10px 40px;
+    width: 100%; 
+}
+
+
+.nav-bar-links a {
+    color: var(--color-txt);
+    text-decoration: none;
+    font-weight: 400px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.nav-bar-links a:hover {
+    color: var(--color-secundaria);
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-bar-links .pre-matricula {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1.2px solid var(--color-bg);
+}
+
+.nav-bar-links .pre-matricula:hover {
+    background-color: var(--color-bg);
+    transition: color 0.2s ease-in;
+
+    color: var(--color-principal);
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+/* CONTAINER */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.containerimg{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.plano{
+    height: 100%;
+    background-image: url(img/fundoAluno.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    position: relative;
+    opacity: 0.5;
+
+}
+
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.img-capelo {
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto 50px auto; 
+}
+
+.box-login {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 550px;
+}
+
+.box-login h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #0c356a;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.input-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    top: -15px;
+    left: 0; 
+    font-size: 25px;
+    color: #333;
+    margin-right: 10px;
+}
+
+
+.esqueceu-senha {
+    position: absolute;
+    right: 10px;
+    top: 68px;
+    font-size: 20px;
+    color: #0c356a; 
+    cursor: pointer;
+}
+
+.esqueceu-senha:hover {
+    color: #22589e; 
+}
+
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #0c356a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0c356a;
+}
+
+.cadastro{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #0c356a; 
+    cursor: pointer;
+    font-weight: bolder;
+    
+}
+.cadastro a:link {
+    text-decoration: none;
+    text-decoration-color: #22589e;
+}
+
+.cadastro:hover{
+    color: #22589e; 
+}
+
