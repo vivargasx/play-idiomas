@@ -39,3 +39,7 @@ botaoNext.addEventListener("click", () => {
 function getMatricula() {
     location.href = "../src/pages/matricula/matricula.html";
 }
+
+function getCurso() {
+    location.href = "../src/pages/cursos/cursos.html"
+}

@@ -1,0 +1,136 @@
+/* VARIAVEIS */
+:root {
+    --color-principal: #0C356A;
+    --color-secundaria: #FFC436;
+    --color-bg: #fff;
+    --color-gray: #d9d9d9;
+
+    /* TEXTO */
+    --color-titulo: #000000;
+    --color-titulo-secundaria: #0c356a;
+    --color-txt: #fff;
+    --color-txt-cinza: #444;
+
+    /* BUTTONS */
+    --btn-color-hover: #22589e;
+}
+
+
+
+
+.container-cursos {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Estilo principal */
+.cursos-principal h1 {
+    font-size: 50px;
+    color: var(--color-principal);
+}
+
+.cursos-principal h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cursos-principal p {
+    font-size: 20px;
+    color: var(--color-txt-cinza);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Lista de cursos */
+.cursos-lista {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.curso-item {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.curso-item:hover {
+    transform: translateY(-5px);
+}
+
+.curso-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.curso-info {
+    padding: 15px;
+}
+
+.curso-info h4 {
+    font-size: 22px;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.curso-info p {
+    font-size: 16px;
+    color: var(--color-txt-cinza);
+}
+
+
+/* Metodologia */
+.cursos-metodologia {
+    margin-top: 40px;
+}
+
+.cursos-metodologia h3 {
+    font-size: 26px;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.cursos-metodologia ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    color: var(--color-txt-cinza);
+}
+
+.cursos-metodologia ul li {
+    margin: 8px 0;
+}
+
+/* Call to Action */
+.cta-container {
+    margin-top: 40px;
+}
+
+.cta-container p {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+.btn-matricula {
+    margin-top: 30px;
+    display: inline-block;
+    background: var(--color-principal);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-matricula:hover {
+    background: var(--btn-color-hover);
+}
