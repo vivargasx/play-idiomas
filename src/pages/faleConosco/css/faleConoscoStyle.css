@@ -1,0 +1,112 @@
+/* VARIAVEIS */
+:root {
+    --color-principal: #0C356A;
+    --color-secundaria: #FFC436;
+    --color-bg: #fff;
+    --color-gray: #d9d9d9;
+
+    /* TEXTO */
+    --color-titulo: #000000;
+    --color-titulo-secundaria: #0c356a;
+    --color-txt: #fff;
+    --color-txt-cinza: #444;
+
+    /* BUTTONS */
+    --btn-color-hover: #22589e;
+}
+
+
+
+.container-fale-conosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    gap: 60px;
+    padding: 50px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+
+.informacoes-contato {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.informacoes-contato h3 {
+    font-size: 2rem;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.informacoes-contato p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: var(--color-txt-cinza);
+}
+
+.formulario {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario h2 {
+    font-size: 2rem;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--color-txt-cinza);
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: var(--color-principal);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--btn-color-hover);
+}
+
+.informacoes-contato img {
+    width: 500px;
+    height: auto;
+    align-items: center;
+}

@@ -1,0 +1,170 @@
+:root {
+    --color-principal: #0C356A;
+    --color-secundaria: #FFC436;
+    --color-bg: #fff;
+    --color-gray: #d9d9d9;
+
+    /* TEXTO */
+    --color-titulo: #000000;
+    --color-titulo-secundaria: #0c356a;
+    --color-txt: #fff;
+    --color-txt-cinza: #444;
+
+    /* BUTTONS */
+    --btn-color-hover: #22589e;
+}
+
+
+
+.containerimg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative; /* Necessário para posicionar elementos dentro dela */
+}
+
+.plano {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/fundoAluno.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-principal);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative; /* Para garantir que a box-login seja centralizada */
+}
+
+
+.box-login {
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 550px;
+    position: absolute; /* Posiciona sobre a imagem */
+    top: 50%; /* 50% da altura */
+    left: 50%; /* 50% da largura */
+    transform: translate(-50%, -135%); /* Ajusta a posição para centralizar exatamente */
+}
+
+.img-capelo {
+    height: 115px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Garante que a imagem esteja alinhada verticalmente */
+    margin: 0px auto 50px auto; /* Centraliza a imagem e ajusta a margem inferior */
+}
+
+.img-capelo img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.box-login h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #0c356a;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    top: -15px;
+    left: 0; 
+    font-size: 25px;
+    color: #333;
+    margin-right: 10px;
+}
+
+
+.esqueceu-senha {
+    position: absolute;
+    right: 10px;
+    top: 68px;
+    font-size: 20px;
+    color: #0c356a; 
+    cursor: pointer;
+}
+
+.esqueceu-senha:hover {
+    color: #22589e; 
+}
+
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #0c356a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: var(--btn-color-hover);
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #0c356a; 
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.cadastro a:link, 
+.cadastro a:visited, 
+.cadastro a:hover, 
+.cadastro a:active {
+    text-decoration: none;
+    color: inherit; /* Isso vai manter a cor original do texto */
+}
+
+.cadastro:hover {
+    color: #22589e;
+}

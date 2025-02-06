@@ -21,17 +21,17 @@
             </div>
 
             <nav class="menu">
-                <a href="#">Cursos</a>
-                <a href="#">Fale Conosco</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="../faleConosco/faleConosco.html">Fale Conosco</a>
                 <a href="#">Sobre</a>
                 <a href="../../../src/pages/matricula/matricula.html" class="pre-matricula">Pré Matrícula</a>
 
                 <div class="dropdown">
                     <a href="#" class="dropbtn"> LOGIN</a>
                     <div class="dropdown-content">
-                        <a href="../src/pages/login/login-aluno.html"> <img
+                        <a href="../loginAluno/loginAluno.html"> <img
                                 src="../../../public/icons/icone-imersao.png">Aluno</a>
-                        <a href="../src/pages/login/login-professor.html"> <img
+                        <a href="../loginProfessor/loginProfessor.html"> <img
                                 src="../../../public/icons/icone-professores-certificados.png">Professor</a>
                     </div>
                 </div>
@@ -42,11 +42,13 @@
         <div class="cursos-principal">
             <h1>Cursos</h1>
             <h3>Aprenda um novo idioma e transforme o seu futuro! 🌍✨</h3>
-    
-            <p>Na <strong>Play Idiomas</strong>, aprender um novo idioma vai muito além das palavras—é uma porta de entrada para novas oportunidades, culturas e experiências incríveis.<br>
-            Oferecemos cursos personalizados para todas as idades e níveis, garantindo um aprendizado dinâmico, prático e envolvente.</p>
+
+            <p>Na <strong>Play Idiomas</strong>, aprender um novo idioma vai muito além das palavras—é uma porta de
+                entrada para novas oportunidades, culturas e experiências incríveis.<br>
+                Oferecemos cursos personalizados para todas as idades e níveis, garantindo um aprendizado dinâmico,
+                prático e envolvente.</p>
         </div>
-    
+
         <div class="cursos-lista">
             <div class="curso-item">
                 <img src="../../../public/img/index/estudante01.png" alt="Curso de Inglês">
@@ -55,7 +57,7 @@
                     <p>Domine o idioma mais falado no mundo e amplie suas oportunidades acadêmicas e profissionais.</p>
                 </div>
             </div>
-    
+
             <div class="curso-item">
                 <img src="../../../public/img/index/estudante02.jpg" alt="Curso de Espanhol">
                 <div class="curso-info">
@@ -63,7 +65,7 @@
                     <p>Aprenda a segunda língua mais falada no planeta e se comunique com milhões de pessoas.</p>
                 </div>
             </div>
-    
+
             <div class="curso-item">
                 <img src="../../../public/img/index/estudante03.jpg" alt="Curso de Francês">
                 <div class="curso-info">
@@ -72,7 +74,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="cursos-metodologia">
             <h3>🔹 Nossa Metodologia</h3>
             <ul>
@@ -82,13 +84,13 @@
                 <li>Material didático moderno e atualizado</li>
             </ul>
         </div>
-    
+
         <div class="cta-container">
             <p>💡 Matricule-se agora e dê o primeiro passo rumo à fluência! 🚀</p>
             <a href="#" class="btn-matricula" onclick="getMatricula()">Quero me inscrever</a>
         </div>
     </div>
-    
+
 
 
 
@@ -129,6 +131,13 @@
                 </a>
             </div>
     </footer>
+
+
+    <script>
+        function getMatricula() {
+        location.href = "../matricula/matricula.html";
+}
+    </script>
 
 </body>
 
