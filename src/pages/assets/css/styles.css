@@ -34,7 +34,6 @@ header {
     width: 100vh;
     height: 400px;
     position: relative;
-    overflow: hidden;
 }
 
 .logo img {
@@ -114,9 +113,67 @@ header {
 }
 
 
+/* MENU - LOGIN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content img {
+    height: 30px;
+    width: 30px;
+}
+
+.dropbtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--color-bg);
+    padding: 50px 50px;
+    transition: 0.3s;
+}
+
+.dropbtn:hover {
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-bg);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    z-index: 1;
+    color: var(--color-principal);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* CONTEUDO */
 .container-conteudo{
-    /* background-color: aqua; */
 
     display: flex;
     justify-items: center;
