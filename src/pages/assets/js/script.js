@@ -36,3 +36,6 @@ botaoNext.addEventListener("click", () => {
 });
 
 
+function getMatricula() {
+    location.href = "../src/pages/matricula/matricula.html";
+}
